@@ -2,14 +2,14 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# SmashRoom 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: ByteX
 
 ### Team Members
-- Member 1: [Name] - [College]
+- Member 1: [Anusree] - [College]
 - Member 2: [Name] - [College]
 
 ### Hosted Project Link
