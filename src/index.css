@@ -1,0 +1,100 @@
+/* 
+ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+
+@keyframes swing {
+  0% { transform: rotate(-30deg) translateY(0); }
+  50% { transform: rotate(20deg) translateY(-10px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+.swing {
+  animation: swing 0.3s ease-in-out;
+}
+
+
+@keyframes fallDown {
+  0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(700px) rotate(360deg); opacity: 0; }
+}
+.emoji {
+  position: absolute;
+  pointer-events: none;
+  z-index: 50;
+  font-size: 90px; 
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  animation-name: fallDown;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.object-card {
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.object-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.35);
+}
+
+
+.damage-bar {
+  height: 12px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: width 0.5s ease-in-out;
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+.animate-shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Hammer swing */
+@keyframes swing {
+  0% { transform: rotate(-30deg) translateY(0); }
+  50% { transform: rotate(20deg) translateY(-10px); }
+  100% { transform: rotate(0deg) translateY(0); }
+}
+.swing {
+  animation: swing 0.3s ease-in-out;
+}
+
+/* Falling emoji */
+@keyframes fall {
+  0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(700px) rotate(360deg); opacity: 0; }
+}
